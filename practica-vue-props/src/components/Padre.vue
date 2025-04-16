@@ -1,24 +1,30 @@
-<script setup>
+<script>
 import Vista from './components/Vista.vue'
 import Editor from './components/Editor.vue'
+
+
+export default{
+  data(){
+    return{
+      titulo: '',
+    }
+  },
+  components: {
+    'componente-editor': Editor,
+    'componente-vista': Vista,
+  },
+}
+
+
 </script>
 
 
 <template>
-  <header>
-    <img alt="Vue logo" class="logo" src="@/assets/logo.svg" width="125" height="125" />
+  <h1>Componente Hijo Editor</h1>
+  <componente-editor v-bind:textoAEditar=""/>
 
-    <div class="wrapper">
-      <Vista msg="You did it!" />
-      <Editor msg="You did it!" />
-      <nav>
-        <RouterLink to="/">Home</RouterLink>
-        <RouterLink to="/about">About</RouterLink>
-      </nav>
-    </div>
-  </header>
-
-  <RouterView />
+  <h1>Componente Hijo Vista</h1>
+  <componente-vista/>
 </template>
 
 
