@@ -20,11 +20,14 @@ export default{
 
 
 <template>
+  <div class="container">
   <h1>Componente Hijo Editor</h1>
-  <componente-editor v-bind:textoAEditar=""/>
+  <componente-editor v-bind:textoAEditar="titulo"/>
 
   <h1>Componente Hijo Vista</h1>
   <componente-vista/>
+
+</div>
 </template>
 
 
