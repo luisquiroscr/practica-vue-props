@@ -2,6 +2,12 @@
 import { RouterLink, RouterView } from 'vue-router'
 import HelloWorld from './components/HelloWorld.vue'
 import Padre from './components/Padre.vue'
+
+export default {
+  components: { Padre }
+}
+
+
 </script>
 
 <template>
@@ -10,7 +16,7 @@ import Padre from './components/Padre.vue'
 
     <div class="wrapper">
       <HelloWorld msg="You did it!" />
-      <Padre msg="You did it!" />
+      <Padre msg="BIENVENIDO!" />
       <nav>
         <RouterLink to="/">Home</RouterLink>
         <RouterLink to="/about">About</RouterLink>

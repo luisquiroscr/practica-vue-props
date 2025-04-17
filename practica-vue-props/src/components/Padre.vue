@@ -6,13 +6,14 @@ import Editor from './components/Editor.vue'
 export default{
   data(){
     return{
-      titulo: '',
+      titulo: 'Texto de Prueba',
     }
   },
   components: {
     'componente-editor': Editor,
     'componente-vista': Vista,
-  },
+  }
+
 }
 
 
@@ -25,7 +26,7 @@ export default{
   <componente-editor v-bind:textoAEditar="titulo"/>
 
   <h1>Componente Hijo Vista</h1>
-  <componente-vista/>
+  <componente-vista v-bind:textoAVisualizar="titulo"/>
 
 </div>
 </template>
