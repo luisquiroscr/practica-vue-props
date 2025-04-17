@@ -1,6 +1,11 @@
 <script>
 export default {
-  props: ['textoAVisualizar']
+  props: {
+    textoAVisualizar: {
+      type: String,
+      require: true
+    }
+  }
 }
 </script>
 
