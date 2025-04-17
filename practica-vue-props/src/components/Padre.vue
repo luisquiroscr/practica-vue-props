@@ -1,6 +1,6 @@
 <script>
-import Vista from './components/Vista.vue'
-import Editor from './components/Editor.vue'
+import Vista from './Vista.vue'
+import Editor from './Editor.vue'
 
 
 export default{
